@@ -1,113 +1,1054 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Feliz Cumpleaños Ma🎂</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto grupal - Reglas de inferencia</title>
+    <link rel="stylesheet" href="decorat.css">
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <!-- Fuente para el título de la portada -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
 
-<style>
-    body {
-        margin: 0;
-        font-family: 'Arial', sans-serif;
-        text-align: center;
-        background-color: #F5F5DC;
-        color: black;
-    }
 
-    .contenedor {
-        padding: 40px 20px;
-    }
-
-    /* TEXTO PRINCIPAL */
-    .titulo {
-        font-size: 60px;
-        font-weight: bold;
-        margin-bottom: 20px;
-    }
-
-    /* IMAGEN PRINCIPAL */
-    .imagen-principal {
-        width: 300px;
-        border-radius: 20px;
-        margin-bottom: 30px;
-    }
-
-    /* BLOQUE DE TEXTO */
-    .mensaje {
-        background: rgba(255,255,255,0.2);
-        padding: 25px;
-        border-radius: 20px;
-        max-width: 600px;
-        margin: auto;
-        font-size: 20px;
-        backdrop-filter: blur(10px);
-    }
-
-    /* SEGUNDA IMAGEN */
-    .imagen-secundaria {
-        width: 250px;
-        margin-top: 30px;
-        border-radius: 15px;
-    }
-
-    /* BOTÓN INTERACTIVO */
-    .boton {
-        margin-top: 40px;
-        font-size: 50px;
-        cursor: pointer;
-        transition: transform 0.2s ease;
-        display: inline-block;
-    }
-
-    .boton:active {
-        transform: scale(1.3);
-    }
-
-</style>
 </head>
-
 <body>
+        <header class="hero-section" id="inicio">
+            <div class="menu" id="boton-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
 
-<div class="contenedor">
+            <nav class="menu-navegacion" id="menu-nav">
+                        <a href="#inicio" class="enlace-menu activo">Inicio</a>
+                        <a href="#introduccion" class="enlace-menu">Introducción</a>
+                        <a href="#reglas" class="enlace-menu">Reglas</a>
+                        <a href="#ejemplos" class="enlace-menu">Ejemplos</a>
+                        <a href="#ejercicio" class="enlace-menu">Ejercicio</a>
+                        <a href="#video" class="enlace-menu">Video</a>
+             </nav>
 
-    <!-- TEXTO GRANDE -->
-    <div class="titulo">
-        🎉 ¡Feliz Cumpleaños! 🎂
+             <div class="overlay">
+                 <div class="contenedor head">
+                     <h1>Reglas de Inferencia</h1>
+                 </div>
+             </div>
+         </header>
+
+
+
+    <main>
+        <section id="introduccion" class="introduccion contenedor">
+            
+            <div class="card">
+            <h2>Introduccion</h2>
+            <P>Las reglas de inferencia son principios lógicos que permiten derivar conclusiones válidas a partir de un conjunto de premisas(proposiciones). Una premisa es una proposición que se asume como
+                verdadera desde el inicio de un razonamiento lógico. A partir de estas premisas se aplican reglas formales con el fin de
+                obtener una nueva proposición, denominada conclusión, que es la que se desea demostrar. Este proceso se conoce como una derivación lógica a partir de premisas.</P>
+            <p>Las reglas de inferencia se utilizan tanto en la lógica proposicional como en la lógica matemática para construir argumentos válidos. Dado que las premisas se consideran
+                verdaderas desde el inicio, si las reglas de inferencia se aplican correctamente, la conclusión obtenida también será verdadera en el sentido lógico.</p>
+            <p>Un argumento es una secuencia de proposiciones, generalmente representadas como
+                p1,p2,p3,…,pn,
+                a partir de las cuales se deriva una conclusión (q). El símbolo ∴ se lee “por lo tanto” y se utiliza para indicar el paso hacia la conclusión (∴ q).</p>
+            <p>Sin embargo, es importante destacar que un argumento no afirma que la conclusión sea verdadera en la realidad, sino que establece que, si las premisas
+                son verdaderas, entonces la conclusión también debe serlo. Por esta razón, se dice que un argumento es válido por su forma lógica y no por el contenido de sus proposiciones.</p>
+                </div>
+        </section>
+
+        <section id="reglas" class="contenedor">                           
+            <div class="card">
+            <h2>Reglas de inferencia</h2>
+
+            <div class="tamaño-tablas">
+            <img
+              src="Imagenes/1.png"
+              alt="Tabla de reglas de inferencia lógica 1"
+              class="imagen-tabla"
+            >
+            <img
+               src = "Imagenes/2.png"
+              alt="Tabla de reglas de inferencia lógica 2"
+              class="imagen-tabla"
+            >
+            </div>
+            </div>
+
+            <div class="card">
+            <h3>Modus Ponens</h3>
+            <div class="card-content">
+                
+                <div class="card-text">
+            <p>Como se muestra en la tabla, la estructura de la regla cuenta con p->q y además con p, eso quiere decir que como premisas tenemos esas dos proposiciones. Siendo que las premisas (p->q) y (p)
+                son verdaderas el resultante es q que también debe ser verdadera, caso contrario si (q) fuese falsa, (p->q) también seria falsa. Para este caso es fácil comprobar dado que se maneja con la tabla de
+                verdad de la implicación. Otro caso puede ser que (p->q) y (–q) como premisas el resultante o conclusión será –p, esto sucede nuevamente por la propiedad de la implicación.</p>
+                </div>
+              <img
+              src="Imagenes/3.png"          
+            >
+            </div>
+            </div>
+
+            <div class="card">
+            <h3>Modus Tollens</h3>
+            <div class="card-content">
+
+                <div class="card-text">
+            <p>Esta regla de inferencia utiliza como premisas p→q  y ¬q. Si ambas premisas se asumen como verdaderas, se concluye necesariamente ¬p (∴¬p).
+                La posible confusión suele surgir a partir de la premisa ¬q, ya que esta indica que la proposición q es falsa. Sin embargo, dicha proposición no constituye la conclusión, sino una de
+                las premisas del argumento. Dado que una implicación solo es falsa cuando el antecedente es verdadero y el consecuente es falso, y puesto que q es falsa, el antecedente p no puede
+                ser verdadero. Por lo tanto, se concluye que p es falsa.
+                Esta conclusión puede verificarse mediante la tabla de verdad de la implicación, considerando los valores de verdad negados y no negados de las proposiciones involucradas.</p>
+                </div>
+            <img
+              src="Imagenes/4.png"
+              
+            >
+            </div>
+            </div>
+
+            <div class="card">
+            <h3>Suma o Generalización</h3>
+            <div class="card-content">
+                
+                <div class="card-text">
+            <p>La regla de inferencia Suma, también conocida como introducción a la disyunción o generalización, establece que dada una proposición cualquiera p, se puede concluir la disyunción p ∨ q (∴ p ∨ q), donde q es una proposición arbitraria.
+              Esta regla se fundamenta en la propiedad de la disyunción, según la cual una proposición disyuntiva es verdadera si al menos uno de sus componentes lo es. Por lo tanto, si p es verdadera, la proposición p ∨ q será verdadera independientemente del valor de verdad de q.
+              En algunos contextos informales, esta regla se describe como “p o cualquier otra proposición”, aunque formalmente se expresa como la introducción de una disyunción a partir de una premisa verdadera. </p>
+              </div>
+            <img
+              src="Imagenes/5.png"             
+            >
+            </div>
+            </div>
+
+            <div class="card">
+            <h3>Simplificación</h3>
+            <div class="card-content">
+
+                <div class="card-text">
+            <p>La regla de inferencia Simplificación establece que, dada una premisa de la forma
+            p ∧ q, se puede concluir cualquiera de sus componentes, es decir, p o q
+            (∴ p) o (∴ q).
+            Esta es una de las reglas más sencillas, ya que se fundamenta directamente en la propiedad de la conjunción. Una conjunción es verdadera únicamente
+            cuando ambas proposiciones que la conforman son verdaderas. Por lo tanto, si se asume como verdadera la proposición p ∧ q, se garantiza que tanto p como q son verdaderas de manera individual.
+            En consecuencia, es válido concluir cualquiera de las dos proposiciones que forman la conjunción, dependiendo de cuál sea necesaria en el razonamiento.
+            </p>
+            </div>
+             <img
+              src="Imagenes/6.png"              
+            >
+            </div>
+            </div>
+
+            <div class="card">
+            <h3>Conjunción</h3>
+            <div class="card-content">
+
+                <div class="card-text">
+            <p>Para esta regla consideramos las premisas p y q como verdaderas. Con base a la propiedad de la conjunción, se establece que ambas proposiciones son verdaderas, entonces su conjunción
+                debe ser verdadera. (∴ p ∧ q)
+                De igual manera que la regla de la simplificación, es una de las reglas más sencillas por que únicamente se aplica la lógica de la conjunción. Sin información adicional se llega a la lógica
+                fundamental de la conjunción llegando a una sola proposición compuesta.
+                </p>
+                </div>
+             <img
+              src="Imagenes/7.png"              
+            >
+            </div>
+            </div>
+
+            <div class="card">
+            <h3>Silogismo Hipotético</h3>
+            <div class="card-content">
+
+                <div class="card-text">
+            <p>La regla de inferencia Silogismo Hipotético o también conocida como la regla de la transitividad, menciona que al tener dos proposiciones compuestas p->q y q ->r, entonces se concluye p->r (∴p->r).
+                Esta regla se fundamenta en el carácter transitivo de la implicación lógica: si la verdad de p garantiza la verdad de q, y la verdad de q garantiza la verdad de r, entonces la verdad de p garantiza necesariamente la verdad de r.
+                A manera de ejemplo, si el objetivo es ir desde el punto A hasta el punto B, y el único camino posible es atravesar una secuencia de puntos intermedios A→1→2→3→B, entonces, dado que cada tramo mantiene una relación de dependencia, se puede concluir que existe una relación directa entre A y B.
+            </p>
+            </div>
+             <img
+              src="Imagenes/8.png"              
+            >
+            </div>
+            </div>
+
+            <div class="card">
+            <h3>Silogismo Disyuntivo</h3>
+            <div class="card-content">        
+
+                <div class="card-text">
+            <p>El Silogismo Disyuntivo es una regla de inferencia que, para muchos estudiantes, resulta una de las más complejas. Su estructura se compone de las premisas p ∨ q y ¬p, a partir de las cuales se concluye q (∴ q).
+            Esta conclusión se justifica porque, al ser verdadera la proposición ¬p, se establece que p es falsa. Dado que la disyunción p ∨ q es verdadera y una disyunción solo es falsa cuando ambos componentes son falsos, es necesario que q sea verdadera para que la proposición disyuntiva se mantenga verdadera.
+            Por lo tanto, esta regla se fundamenta en el principio lógico de la disyunción, según el cual basta con que una de las proposiciones sea verdadera para que toda la disyunción lo sea.
+            </p>
+            </div>
+             <img
+              src="Imagenes/9.png"             
+            >
+            </div>
+            </div>
+
+        </section>
+
+        <section id="ejemplos" class="contenedor">
+            <div class="card">
+            <h2>Ejemplos y Matlab</h2>            
+            <p>Despliega cada regla para ver el ejemplo aplicado.</p>
+            </div>
+
+            <div class="ejemplos-grid">
+                <details class="ejemplo-card" open>
+                    <summary>Modus Tollens</summary>
+                    <ul class="ejemplo-lista">
+                        <li>p &rarr; q: Si Zeus es humano, entonces Zeus es mortal.</li>
+                        <li>&not; q: Zeus es inmortal.</li>
+                        <li>&therefore; &not; p: Zeus no es humano.</li>
+                    </ul>
+                    <p class="ejemplo-nota">Si de p se deduce q, pero se niega q, entonces se niega p.</p>
+                </details>
+
+                <details class="ejemplo-card">
+                    <summary>Introducción de la Disyunción (Generalización o Suma)</summary>
+                    <ul class="ejemplo-lista">
+                        <li>p: Zeus es inmortal.</li>
+                        <li>q: Zeus es humano (proposición cualquiera).</li>
+                        <li>p &vee; q: Zeus es inmortal o Zeus es humano.</li>
+                    </ul>
+                    <p class="ejemplo-nota">La regla permite agregar cualquier proposición por disyunción a una afirmación verdadera.</p>
+                </details>
+                <details class="ejemplo-card">
+                    <summary>Modus Ponens</summary>
+                    <ul class="ejemplo-lista">
+                        <li>p → q: Si hoy es martes, entonces Juan se irá a trabajar.</li>
+                        <li>p: Hoy es martes.</li>
+                        <li>p ∴ q: Juan irá a trabajar.</li>
+                    </ul>
+                    <p class="ejemplo-nota">"El modo que, al afirmar, afirma“.</p>
+                </details>
+                <details class="ejemplo-card">
+                    <summary>Silogismo Hipotético</summary>
+                    <ul class="ejemplo-lista">
+                        <li>p → q: Si estudio, entonces aprobaré el examen.</li>
+                        <li>q → r: Si apruebo el examen, entonces pasaré el curso.</li>
+                        <li>p ∴ r: Si estudio, entonces pasaré el curso.</li>
+                    </ul>
+                    <p class="ejemplo-nota">Permite derivar una conclusión a partir de dos condicionales encadenados.</p>
+                </details>
+                <details class="ejemplo-card">
+                    <summary>Silogismo Disyuntivo</summary>
+                    <ul class="ejemplo-lista">
+                        <li>p ∨ q: O llueve o hace sol.</li>
+                        <li>¬p: No está lloviendo.</li>
+                        <li>∴ q: Entonces, está haciendo sol.</li>
+                    </ul>
+                    <p class="ejemplo-nota">Si se tiene una disyunción y se niega una de las opciones, se puede concluir que la otra opción es verdadera.</p>
+                </details>
+                <details class="ejemplo-card">
+                    <summary>Conjunción</summary>
+                    <ul class="ejemplo-lista">
+                        <li>p: María es estudiante.</li>
+                        <li>q: María trabaja medio tiempo.</li>
+                        <li>p ∧ q: María es estudiante y trabaja medio tiempo.</li>
+                    </ul>
+                    <p class="ejemplo-nota">Permite combinar dos proposiciones verdaderas en una sola afirmación conjunta.</p>
+                </details>
+                <details class="ejemplo-card">
+                <summary>Adición</summary>
+                <ul class="ejemplo-lista">
+                    <li>p: El cielo es azul.</li>
+                    <li>q: La hierba es verde (proposición cualquiera).</li>
+                    <li>p ∨ q: El cielo es azul o la hierba es verde.</li>
+                </ul>
+                <p class="ejemplo-nota">Permite agregar cualquier proposición por disyunción a una afirmación verdadera.</p>
+            </details>
+            </div>
+        </section>
+
+
+          <!--PARA MATLAB-->
+   <section class="codigo-matlab">
+    <div class="matlab-header">
+        <span class="matlab-dot red"></span>
+        <span class="matlab-dot yellow"></span>
+        <span class="matlab-dot green"></span>
+        <span class="matlab-title">Editor MATLAB</span>
     </div>
 
-    <!-- IMAGEN PRINCIPAL -->
-    <img class="imagen-principal"
-         src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d"
-         alt="Cumpleaños">
+    <pre class="matlab-code">    
+         <span class="comentario">% Regla de inferencia: Modus Ponens</span>
+         <span class="comentario">% Definimos las proposiciones</span>
+         <span class="comentario">% p: Esta lloviendo</span>
+         <span class="comentario">% q: La calle esta mojada</span>
+          p = true;  
+          q = false; 
+         <span class="keyword">if</span> p == true
+          q = true;
+         <span class="keyword">end</span>
+         <span class="comentario">% Mostrar resultado</span>
+         disp('MODUS PONENS:')
+         disp(['Esta lloviendo = ', num2str(p)])
+         disp(['La calle esta mojada = ', num2str(q)])
+         disp('Esta lloviendo, entonces la calle esta mojada')
+    </pre>
+    <p class="nota">📌 Código desarrollado en MATLAB (visualización educativa).</p>
 
-    <!-- MENSAJE -->
-    <div class="mensaje">
-        Hoy es un día muy especial 🎈<br><br>
-        Espero que este nuevo año de vida esté lleno de felicidad,
-        salud y muchos momentos inolvidables 💖<br><br>
-        ¡Disfruta tu día al máximo! 🎁
+       <div class="matlab-header">
+        <span class="matlab-dot red"></span>
+        <span class="matlab-dot yellow"></span>
+        <span class="matlab-dot green"></span>
+        <span class="matlab-title">Editor MATLAB</span>
+       </div>
+
+        <pre class="matlab-code">
+        <span class="comentario">% Regla de inferencia: Modus Tollens</span>
+        <span class="comentario">% p: Está lloviendo</span>
+        <span class="comentario">% q: La calle está mojada</span>
+
+        p = true;
+        q = false;
+
+        <span class="keyword">if</span> q == false
+        p = false;
+        <span class="keyword">end</span>
+
+        <span class="comentario">% Mostrar resultado</span>
+    disp('MODUS TOLLENS:')
+    disp(['Esta lloviendo = ', num2str(p)])
+    disp(['La calle esta mojada = ', num2str(q)])
+    disp('La calle no esta mojada, entonces no esta lloviendo')
+    </pre>
+<p class="nota">📌 Código desarrollado en MATLAB (visualización educativa).</p>
+
+
+
+       <div class="matlab-header">
+        <span class="matlab-dot red"></span>
+        <span class="matlab-dot yellow"></span>
+        <span class="matlab-dot green"></span>
+        <span class="matlab-title">Editor MATLAB</span>
     </div>
 
-    <!-- SEGUNDA IMAGEN -->
-    <img class="imagen-secundaria"
-         src="https://images.unsplash.com/photo-1464349153735-7db50ed83c84"
-         alt="Fiesta">
+    <pre class="matlab-code">
+    <span class="comentario">% Regla de inferencia: Suma (Adición)</span>
+    <span class="comentario">% p: Está lloviendo</span>
+    <span class="comentario">% q: Hace frio</span>
 
-    <!-- BOTÓN INTERACTIVO -->
-    <div class="boton" onclick="animarBoton(this)">
-        🎈
+    p = true;
+    q = false;
+
+    resultado = p || q;
+
+    <span class="comentario">% Mostrar resultado</span>
+        disp('SUMA (ADICION):')
+        disp(['Esta lloviendo = ', num2str(p)])
+        disp(['Hace frio = ', num2str(q)])
+        disp(['p OR q = ', num2str(resultado)])
+        disp('Esta lloviendo, entonces esta lloviendo o hace frio')
+    </pre>
+
+    <p class="nota">📌 Código desarrollado en MATLAB (visualización educativa).</p>
+    </section>
+
+
+
+        <section id="ejercicio" class="contenedor">
+            <div class="card">
+            <h2>Ejercicio interactivo</h2>
+            <p>Tienes 4 Rondas de 7 preguntas cada una. ¡Demuestra tu conocimiento!</p>
+            </div>
+            <div id="indicador-ronda" class="indicador-ronda">Ronda 1 de 4</div>
+
+            <div class="ejercicios-container" id="ejercicios-container">
+                <!-- RONDA 1: 7 preguntas -->
+                <div class="ronda" data-ronda="1">
+                    <div class="pregunta-card" data-regla="Modus Ponens">
+                        <div class="pregunta-header">
+                            <span class="regla-tag">Modus Ponens</span>
+                            <span class="numero-pregunta">1/7</span>
+                        </div>
+                        <h3>Si llueve, entonces el piso estará mojado. Llueve. ¿Cuál es la conclusión?</h3>
+                        <div class="opciones">
+                            <button class="opcion-btn" data-respuesta="correcta">El piso estará mojado</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">No llueve</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">El piso no estará mojado</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">Puede que llueva</button>
+                        </div>
+                        <div class="feedback"></div>
+                    </div>
+
+                    <div class="pregunta-card" data-regla="Modus Tollens">
+                        <div class="pregunta-header">
+                            <span class="regla-tag">Modus Tollens</span>
+                            <span class="numero-pregunta">2/7</span>
+                        </div>
+                        <h3>Si es un perro, entonces tiene cuatro patas. No tiene cuatro patas. ¿Cuál es la conclusión?</h3>
+                        <div class="opciones">
+                            <button class="opcion-btn" data-respuesta="correcta">No es un perro</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">Es un perro</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">Tiene cuatro patas</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">Es un gato</button>
+                        </div>
+                        <div class="feedback"></div>
+                    </div>
+
+                    <div class="pregunta-card" data-regla="Suma">
+                        <div class="pregunta-header">
+                            <span class="regla-tag">Suma/Generalización</span>
+                            <span class="numero-pregunta">3/7</span>
+                        </div>
+                        <h3>El cielo es azul (p). ¿Cuál es la conclusión aplicando la regla de Suma?</h3>
+                        <div class="opciones">
+                            <button class="opcion-btn" data-respuesta="incorrecta">El cielo no es azul</button>
+                            <button class="opcion-btn" data-respuesta="correcta">El cielo es azul o la hierba es verde</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">La hierba es verde</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">El cielo es gris</button>
+                        </div>
+                        <div class="feedback"></div>
+                    </div>
+
+                    <div class="pregunta-card" data-regla="Simplificación">
+                        <div class="pregunta-header">
+                            <span class="regla-tag">Simplificación</span>
+                            <span class="numero-pregunta">4/7</span>
+                        </div>
+                        <h3>María estudia y María trabaja (p ∧ q). ¿Cuál es una conclusión válida?</h3>
+                        <div class="opciones">
+                            <button class="opcion-btn" data-respuesta="correcta">María estudia</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">María no estudia</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">María no trabaja</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">María viaja</button>
+                        </div>
+                        <div class="feedback"></div>
+                    </div>
+
+                    <div class="pregunta-card" data-regla="Conjunción">
+                        <div class="pregunta-header">
+                            <span class="regla-tag">Conjunción</span>
+                            <span class="numero-pregunta">5/7</span>
+                        </div>
+                        <h3>Carlos es inteligente (p). Carlos es dedicado (q). ¿Cuál es la conclusión por Conjunción?</h3>
+                        <div class="opciones">
+                            <button class="opcion-btn" data-respuesta="incorrecta">Carlos es perezoso</button>
+                            <button class="opcion-btn" data-respuesta="correcta">Carlos es inteligente y dedicado</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">Carlos no es dedicado</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">Carlos es inteligente o dedicado</button>
+                        </div>
+                        <div class="feedback"></div>
+                    </div>
+
+                    <div class="pregunta-card" data-regla="Silogismo Hipotético">
+                        <div class="pregunta-header">
+                            <span class="regla-tag">Silogismo Hipotético</span>
+                            <span class="numero-pregunta">6/7</span>
+                        </div>
+                        <h3>Si estudio, apruebo (p→q). Si apruebo, paso el curso (q→r). ¿Cuál es la conclusión?</h3>
+                        <div class="opciones">
+                            <button class="opcion-btn" data-respuesta="incorrecta">No estudio</button>
+                            <button class="opcion-btn" data-respuesta="correcta">Si estudio, paso el curso</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">Apruebo pero no paso</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">No paso el curso</button>
+                        </div>
+                        <div class="feedback"></div>
+                    </div>
+
+                    <div class="pregunta-card" data-regla="Silogismo Disyuntivo">
+                        <div class="pregunta-header">
+                            <span class="regla-tag">Silogismo Disyuntivo</span>
+                            <span class="numero-pregunta">7/7</span>
+                        </div>
+                        <h3>O llueve o hace sol (p ∨ q). No llueve. ¿Cuál es la conclusión?</h3>
+                        <div class="opciones">
+                            <button class="opcion-btn" data-respuesta="incorrecta">Llueve</button>
+                            <button class="opcion-btn" data-respuesta="correcta">Hace sol</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">No hace sol</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">Llueve y hace sol</button>
+                        </div>
+                        <div class="feedback"></div>
+                    </div>
+                </div>
+
+                <!-- RONDA 2: 7 preguntas diferentes -->
+                <div class="ronda" data-ronda="2" style="display:none;">
+                    <div class="pregunta-card" data-regla="Modus Ponens">
+                        <div class="pregunta-header">
+                            <span class="regla-tag">Modus Ponens</span>
+                            <span class="numero-pregunta">1/7</span>
+                        </div>
+                        <h3>Si apruebo el examen, entonces pasaré el curso. Aprobé el examen. ¿Cuál es la conclusión?</h3>
+                        <div class="opciones">
+                            <button class="opcion-btn" data-respuesta="incorrecta">No pasaré el curso</button>
+                            <button class="opcion-btn" data-respuesta="correcta">Pasaré el curso</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">No aprobé el examen</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">El examen fue fácil</button>
+                        </div>
+                        <div class="feedback"></div>
+                    </div>
+
+                    <div class="pregunta-card" data-regla="Modus Tollens">
+                        <div class="pregunta-header">
+                            <span class="regla-tag">Modus Tollens</span>
+                            <span class="numero-pregunta">2/7</span>
+                        </div>
+                        <h3>Si está nublado, entonces lloverá. No llueve. ¿Cuál es la conclusión?</h3>
+                        <div class="opciones">
+                            <button class="opcion-btn" data-respuesta="incorrecta">Está nublado</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">Llueve</button>
+                            <button class="opcion-btn" data-respuesta="correcta">No está nublado</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">Hace sol</button>
+                        </div>
+                        <div class="feedback"></div>
+                    </div>
+
+                    <div class="pregunta-card" data-regla="Suma">
+                        <div class="pregunta-header">
+                            <span class="regla-tag">Suma/Generalización</span>
+                            <span class="numero-pregunta">3/7</span>
+                        </div>
+                        <h3>Juan es ingeniero (p). ¿Cuál es una conclusión válida por Suma?</h3>
+                        <div class="opciones">
+                            <button class="opcion-btn" data-respuesta="correcta">Juan es ingeniero o Juan es maestro</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">Juan no es ingeniero</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">Juan es maestro</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">Juan no tiene profesión</button>
+                        </div>
+                        <div class="feedback"></div>
+                    </div>
+
+                    <div class="pregunta-card" data-regla="Simplificación">
+                        <div class="pregunta-header">
+                            <span class="regla-tag">Simplificación</span>
+                            <span class="numero-pregunta">4/7</span>
+                        </div>
+                        <h3>El coche es rojo y el coche es rápido. ¿Cuál es una conclusión correcta?</h3>
+                        <div class="opciones">
+                            <button class="opcion-btn" data-respuesta="incorrecta">El coche es azul</button>
+                            <button class="opcion-btn" data-respuesta="correcta">El coche es rápido</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">El coche es lento</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">El coche no existe</button>
+                        </div>
+                        <div class="feedback"></div>
+                    </div>
+
+                    <div class="pregunta-card" data-regla="Conjunción">
+                        <div class="pregunta-header">
+                            <span class="regla-tag">Conjunción</span>
+                            <span class="numero-pregunta">5/7</span>
+                        </div>
+                        <h3>La puerta está abierta (p). El gato entra (q). ¿Cuál es la conclusión?</h3>
+                        <div class="opciones">
+                            <button class="opcion-btn" data-respuesta="correcta">La puerta está abierta y el gato entra</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">La puerta está cerrada</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">El gato no entra</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">La puerta está abierta o el gato entra</button>
+                        </div>
+                        <div class="feedback"></div>
+                    </div>
+
+                    <div class="pregunta-card" data-regla="Silogismo Hipotético">
+                        <div class="pregunta-header">
+                            <span class="regla-tag">Silogismo Hipotético</span>
+                            <span class="numero-pregunta">6/7</span>
+                        </div>
+                        <h3>Si llueve, me mojo (p→q). Si me mojo, me resfrio (q→r). ¿Cuál es la conclusión?</h3>
+                        <div class="opciones">
+                            <button class="opcion-btn" data-respuesta="correcta">Si llueve, me resfrio</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">No llueve</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">Me mojo sin lluvia</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">Si me mojo, llueve</button>
+                        </div>
+                        <div class="feedback"></div>
+                    </div>
+
+                    <div class="pregunta-card" data-regla="Silogismo Disyuntivo">
+                        <div class="pregunta-header">
+                            <span class="regla-tag">Silogismo Disyuntivo</span>
+                            <span class="numero-pregunta">7/7</span>
+                        </div>
+                        <h3>O Pedro es médico o Pedro es abogado. Pedro no es médico. ¿Cuál es la conclusión?</h3>
+                        <div class="opciones">
+                            <button class="opcion-btn" data-respuesta="incorrecta">Pedro es médico</button>
+                            <button class="opcion-btn" data-respuesta="correcta">Pedro es abogado</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">Pedro no es abogado</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">Pedro es ingeniero</button>
+                        </div>
+                        <div class="feedback"></div>
+                    </div>
+                </div>
+
+                <!-- RONDA 3: 7 preguntas diferentes -->
+                <div class="ronda" data-ronda="3" style="display:none;">
+                    <div class="pregunta-card" data-regla="Modus Ponens">
+                        <div class="pregunta-header">
+                            <span class="regla-tag">Modus Ponens</span>
+                            <span class="numero-pregunta">1/7</span>
+                        </div>
+                        <h3>Si tienes dinero, puedes viajar. Tienes dinero. ¿Cuál es la conclusión?</h3>
+                        <div class="opciones">
+                            <button class="opcion-btn" data-respuesta="correcta">Puedes viajar</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">No tienes dinero</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">No puedes viajar</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">Viajarás pronto</button>
+                        </div>
+                        <div class="feedback"></div>
+                    </div>
+
+                    <div class="pregunta-card" data-regla="Modus Tollens">
+                        <div class="pregunta-header">
+                            <span class="regla-tag">Modus Tollens</span>
+                            <span class="numero-pregunta">2/7</span>
+                        </div>
+                        <h3>Si es verano, hace calor. No hace calor. ¿Cuál es la conclusión?</h3>
+                        <div class="opciones">
+                            <button class="opcion-btn" data-respuesta="incorrecta">Es verano</button>
+                            <button class="opcion-btn" data-respuesta="correcta">No es verano</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">Hace calor</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">Es invierno</button>
+                        </div>
+                        <div class="feedback"></div>
+                    </div>
+
+                    <div class="pregunta-card" data-regla="Suma">
+                        <div class="pregunta-header">
+                            <span class="regla-tag">Suma/Generalización</span>
+                            <span class="numero-pregunta">3/7</span>
+                        </div>
+                        <h3>Ana es estudiante. ¿Cuál es una conclusión válida por Suma?</h3>
+                        <div class="opciones">
+                            <button class="opcion-btn" data-respuesta="correcta">Ana es estudiante o trabaja</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">Ana no es estudiante</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">Ana trabaja</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">Ana no hace nada</button>
+                        </div>
+                        <div class="feedback"></div>
+                    </div>
+
+                    <div class="pregunta-card" data-regla="Simplificación">
+                        <div class="pregunta-header">
+                            <span class="regla-tag">Simplificación</span>
+                            <span class="numero-pregunta">4/7</span>
+                        </div>
+                        <h3>El reloj es redondo y el reloj funciona. ¿Cuál es una conclusión correcta?</h3>
+                        <div class="opciones">
+                            <button class="opcion-btn" data-respuesta="incorrecta">El reloj es cuadrado</button>
+                            <button class="opcion-btn" data-respuesta="correcta">El reloj funciona</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">El reloj no funciona</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">El reloj se rompió</button>
+                        </div>
+                        <div class="feedback"></div>
+                    </div>
+
+                    <div class="pregunta-card" data-regla="Conjunción">
+                        <div class="pregunta-header">
+                            <span class="regla-tag">Conjunción</span>
+                            <span class="numero-pregunta">5/7</span>
+                        </div>
+                        <h3>El cielo está despejado (p). Los pájaros cantan (q). ¿Cuál es la conclusión?</h3>
+                        <div class="opciones">
+                            <button class="opcion-btn" data-respuesta="correcta">El cielo está despejado y los pájaros cantan</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">El cielo está nublado</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">Los pájaros no cantan</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">El cielo está despejado o los pájaros cantan</button>
+                        </div>
+                        <div class="feedback"></div>
+                    </div>
+
+                    <div class="pregunta-card" data-regla="Silogismo Hipotético">
+                        <div class="pregunta-header">
+                            <span class="regla-tag">Silogismo Hipotético</span>
+                            <span class="numero-pregunta">6/7</span>
+                        </div>
+                        <h3>Si practico, mejoro (p→q). Si mejoro, gano (q→r). ¿Cuál es la conclusión?</h3>
+                        <div class="opciones">
+                            <button class="opcion-btn" data-respuesta="incorrecta">No practico</button>
+                            <button class="opcion-btn" data-respuesta="correcta">Si practico, gano</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">Mejoro pero no gano</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">No gano</button>
+                        </div>
+                        <div class="feedback"></div>
+                    </div>
+
+                    <div class="pregunta-card" data-regla="Silogismo Disyuntivo">
+                        <div class="pregunta-header">
+                            <span class="regla-tag">Silogismo Disyuntivo</span>
+                            <span class="numero-pregunta">7/7</span>
+                        </div>
+                        <h3>O es de día o es de noche. No es de día. ¿Cuál es la conclusión?</h3>
+                        <div class="opciones">
+                            <button class="opcion-btn" data-respuesta="incorrecta">Es de día</button>
+                            <button class="opcion-btn" data-respuesta="correcta">Es de noche</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">No es de noche</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">Es atardecer</button>
+                        </div>
+                        <div class="feedback"></div>
+                    </div>
+                </div>
+
+                <!-- RONDA 4: 7 preguntas diferentes -->
+                <div class="ronda" data-ronda="4" style="display:none;">
+                    <div class="pregunta-card" data-regla="Modus Ponens">
+                        <div class="pregunta-header">
+                            <span class="regla-tag">Modus Ponens</span>
+                            <span class="numero-pregunta">1/7</span>
+                        </div>
+                        <h3>Si trabajas duro, tendrás éxito. Trabajaste duro. ¿Cuál es la conclusión?</h3>
+                        <div class="opciones">
+                            <button class="opcion-btn" data-respuesta="correcta">Tendrás éxito</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">No trabajaste duro</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">No tendrás éxito</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">Podrías tener éxito</button>
+                        </div>
+                        <div class="feedback"></div>
+                    </div>
+
+                    <div class="pregunta-card" data-regla="Modus Tollens">
+                        <div class="pregunta-header">
+                            <span class="regla-tag">Modus Tollens</span>
+                            <span class="numero-pregunta">2/7</span>
+                        </div>
+                        <h3>Si es un pájaro, vuela. No vuela. ¿Cuál es la conclusión?</h3>
+                        <div class="opciones">
+                            <button class="opcion-btn" data-respuesta="incorrecta">Es un pájaro</button>
+                            <button class="opcion-btn" data-respuesta="correcta">No es un pájaro</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">Vuela</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">Es un murciélago</button>
+                        </div>
+                        <div class="feedback"></div>
+                    </div>
+
+                    <div class="pregunta-card" data-regla="Suma">
+                        <div class="pregunta-header">
+                            <span class="regla-tag">Suma/Generalización</span>
+                            <span class="numero-pregunta">3/7</span>
+                        </div>
+                        <h3>Este libro es interesante. ¿Cuál es una conclusión válida por Suma?</h3>
+                        <div class="opciones">
+                            <button class="opcion-btn" data-respuesta="correcta">Este libro es interesante o es antiguo</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">Este libro no es interesante</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">Este libro es antiguo</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">Este libro es aburrido</button>
+                        </div>
+                        <div class="feedback"></div>
+                    </div>
+
+                    <div class="pregunta-card" data-regla="Simplificación">
+                        <div class="pregunta-header">
+                            <span class="regla-tag">Simplificación</span>
+                            <span class="numero-pregunta">4/7</span>
+                        </div>
+                        <h3>La música es hermosa y la música relaja. ¿Cuál es una conclusión correcta?</h3>
+                        <div class="opciones">
+                            <button class="opcion-btn" data-respuesta="incorrecta">La música no relaja</button>
+                            <button class="opcion-btn" data-respuesta="correcta">La música relaja</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">La música es fea</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">La música estresa</button>
+                        </div>
+                        <div class="feedback"></div>
+                    </div>
+
+                    <div class="pregunta-card" data-regla="Conjunción">
+                        <div class="pregunta-header">
+                            <span class="regla-tag">Conjunción</span>
+                            <span class="numero-pregunta">5/7</span>
+                        </div>
+                        <h3>El café es caliente (p). El café tiene sabor (q). ¿Cuál es la conclusión?</h3>
+                        <div class="opciones">
+                            <button class="opcion-btn" data-respuesta="correcta">El café es caliente y tiene sabor</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">El café es frío</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">El café no tiene sabor</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">El café es caliente o tiene sabor</button>
+                        </div>
+                        <div class="feedback"></div>
+                    </div>
+
+                    <div class="pregunta-card" data-regla="Silogismo Hipotético">
+                        <div class="pregunta-header">
+                            <span class="regla-tag">Silogismo Hipotético</span>
+                            <span class="numero-pregunta">6/7</span>
+                        </div>
+                        <h3>Si duermo bien, tengo energía (p→q). Si tengo energía, soy productivo (q→r). ¿Cuál es la conclusión?</h3>
+                        <div class="opciones">
+                            <button class="opcion-btn" data-respuesta="incorrecta">No duermo</button>
+                            <button class="opcion-btn" data-respuesta="correcta">Si duermo bien, soy productivo</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">Tengo energía pero no soy productivo</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">No soy productivo</button>
+                        </div>
+                        <div class="feedback"></div>
+                    </div>
+
+                    <div class="pregunta-card" data-regla="Silogismo Disyuntivo">
+                        <div class="pregunta-header">
+                            <span class="regla-tag">Silogismo Disyuntivo</span>
+                            <span class="numero-pregunta">7/7</span>
+                        </div>
+                        <h3>O apruebas o repruebas. No repruebas. ¿Cuál es la conclusión?</h3>
+                        <div class="opciones">
+                            <button class="opcion-btn" data-respuesta="incorrecta">Repruebas</button>
+                            <button class="opcion-btn" data-respuesta="correcta">Apruebas</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">No apruebas</button>
+                            <button class="opcion-btn" data-respuesta="incorrecta">Estás en recuperación</button>
+                        </div>
+                        <div class="feedback"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resultado-final" id="resultado-final">
+                <p id="puntuacion">Responde todas las preguntas para ver tu puntuación</p>
+                <button id="siguiente-ronda-btn" style="display:none;" class="btn-reiniciar">Siguiente Ronda</button>
+                <button id="reiniciar-btn" style="display:none;" class="btn-reiniciar">Reiniciar desde el inicio</button>
+            </div>
+        </section>
+
+        <section id="video" class="video contenedor">
+            <div class="card">
+            <h3>Video</h3>
+
+            <div class="video-wrapper">
+                <iframe
+                src="https://www.youtube.com/embed/Sct5j7Quo54"
+                title="video demostrativo"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+                </iframe>
+            </div>
+            <p>COLOCAR EL VIDEO DIRECTO EN LA PAGINA</p>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script>
+        // ====== MENÚ HAMBURGUESA ======
+        const botonMenu = document.getElementById('boton-menu');
+        const menuNav = document.getElementById('menu-nav');
+        const enlacesMenu = document.querySelectorAll('.enlace-menu');
+
+        botonMenu.addEventListener('click', function() {
+            menuNav.classList.toggle('activo');
+            botonMenu.classList.toggle('activo');
+        });
+
+        enlacesMenu.forEach(enlace => {
+            enlace.addEventListener('click', function() {
+                enlacesMenu.forEach(item => item.classList.remove('activo'));
+                enlace.classList.add('activo');
+                menuNav.classList.remove('activo');
+                botonMenu.classList.remove('activo');
+            });
+        });
+
+        document.addEventListener('click', function(event) {
+            if (!menuNav.contains(event.target) && !botonMenu.contains(event.target)) {
+                menuNav.classList.remove('activo');
+                botonMenu.classList.remove('activo');
+            }
+        });
+
+        // ====== EJERCICIOS INTERACTIVOS CON 4 RONDAS ======
+        let rondaActual = 1;
+        const totalRondas = 4;
+        let puntuacionTotal = 0;
+        let respuestasRonda = {};
+        const indicadorRonda = document.getElementById('indicador-ronda');
+        const siguienteRondaBtn = document.getElementById('siguiente-ronda-btn');
+        const reiniciarBtn = document.getElementById('reiniciar-btn');
+        const puntuacionElement = document.getElementById('puntuacion');
+        const ejerciciosContainer = document.getElementById('ejercicios-container');
+
+        function cargarRonda(numRonda) {
+            // Ocultar todas las rondas
+            document.querySelectorAll('.ronda').forEach(r => r.style.display = 'none');
+            // Mostrar la ronda actual
+            document.querySelector(`.ronda[data-ronda="${numRonda}"]`).style.display = 'block';
+            // Actualizar indicador
+            indicadorRonda.textContent = `Ronda ${numRonda} de ${totalRondas}`;
+            // Reiniciar respuestas de la ronda
+            respuestasRonda = {};
+            // Ocultar botones
+            siguienteRondaBtn.style.display = 'none';
+            reiniciarBtn.style.display = 'none';
+            puntuacionElement.textContent = 'Responde todas las preguntas para ver tu puntuación';
+            puntuacionElement.style.color = '#999';
+            puntuacionElement.style.fontSize = '1rem';
+            // Agregar eventos a las preguntas de esta ronda
+            agregarEventosPreguntasRonda(numRonda);
+        }
+
+        function agregarEventosPreguntasRonda(numRonda) {
+            const rondaElement = document.querySelector(`.ronda[data-ronda="${numRonda}"]`);
+            const preguntas = rondaElement.querySelectorAll('.pregunta-card');
+
+            preguntas.forEach((card, indexCard) => {
+                respuestasRonda[indexCard] = null;
+                const botonesOpcion = card.querySelectorAll('.opcion-btn');
+                const feedbackDiv = card.querySelector('.feedback');
+
+                // Limpiar eventos anteriores
+                botonesOpcion.forEach(btn => {
+                    btn.disabled = false;
+                    btn.onclick = null;
+                    btn.classList.remove('correcta', 'incorrecta', 'seleccionada');
+                });
+                feedbackDiv.classList.remove('visible', 'correcto', 'incorrecto');
+
+                // Agregar nuevos eventos
+                botonesOpcion.forEach(btn => {
+                    btn.addEventListener('click', function() {
+                        manejarRespuesta(this, botonesOpcion, feedbackDiv, indexCard);
+                    });
+                });
+            });
+        }
+
+        function manejarRespuesta(botonSeleccionado, botonesOpcion, feedbackDiv, indexCard) {
+            // Deshabilitar todos los botones
+            botonesOpcion.forEach(b => b.disabled = true);
+
+            const esCorrecta = botonSeleccionado.dataset.respuesta === 'correcta';
+            respuestasRonda[indexCard] = {
+                respuesta: botonSeleccionado.textContent,
+                correcta: esCorrecta
+            };
+
+            // Mostrar retroalimentación
+            if (esCorrecta) {
+                botonSeleccionado.classList.add('correcta');
+                feedbackDiv.classList.add('visible', 'correcto');
+                feedbackDiv.textContent = '¡Correcto! Excelente respuesta.';
+            } else {
+                botonSeleccionado.classList.add('incorrecta');
+                feedbackDiv.classList.add('visible', 'incorrecto');
+                feedbackDiv.textContent = 'Incorrecto. Intenta con otra pregunta.';
+            }
+
+            // Mostrar respuesta correcta
+            botonesOpcion.forEach(b => {
+                if (b.dataset.respuesta === 'correcta' && b !== botonSeleccionado) {
+                    b.classList.add('correcta');
+                }
+            });
+
+            // Verificar si se completó la ronda
+            verificarRondaCompleta();
+        }
+
+        function verificarRondaCompleta() {
+            const rondaElement = document.querySelector(`.ronda[data-ronda="${rondaActual}"]`);
+            const totalPreguntas = rondaElement.querySelectorAll('.pregunta-card').length;
+            let respondidas = 0;
+            let correctas = 0;
+
+            Object.values(respuestasRonda).forEach(resp => {
+                if (resp !== null) {
+                    respondidas++;
+                    if (resp.correcta) correctas++;
+                }
+            });
+
+            if (respondidas === totalPreguntas) {
+                mostrarResultadoRonda(correctas, totalPreguntas);
+            }
+        }
+
+        function mostrarResultadoRonda(correctas, total) {
+            const porcentaje = Math.round((correctas / total) * 100);
+            puntuacionTotal += correctas;
+            let mensaje = `Ronda ${rondaActual}: ${correctas}/${total} correctas (${porcentaje}%)`;
+
+            if (porcentaje === 100) {
+                mensaje += ' 🎉 ¡Perfecto!';
+            } else if (porcentaje >= 80) {
+                mensaje += ' 👏 ¡Muy bien!';
+            } else if (porcentaje >= 60) {
+                mensaje += ' 👍 Bien';
+            } else {
+                mensaje += ' 📚 Sigue practicando';
+            }
+
+            puntuacionElement.textContent = mensaje;
+            puntuacionElement.style.color = '#111';
+            puntuacionElement.style.fontSize = '1.1rem';
+
+            if (rondaActual < totalRondas) {
+                siguienteRondaBtn.style.display = 'inline-block';
+                siguienteRondaBtn.onclick = function() {
+                    rondaActual++;
+                    cargarRonda(rondaActual);
+                };
+            } else {
+                mostrarPuntuacionFinal();
+            }
+        }
+
+        function mostrarPuntuacionFinal() {
+            const puntuacionMaxima = totalRondas * 7;
+            const porcentajeFinal = Math.round((puntuacionTotal / puntuacionMaxima) * 100);
+            let mensajeFinal = '';
+
+            if (porcentajeFinal === 100) {
+                mensajeFinal = ` ¡PERFECTO! Obtuviste ${puntuacionTotal}/${puntuacionMaxima} puntos (${porcentajeFinal}%)`;
+            } else if (porcentajeFinal >= 90) {
+                mensajeFinal = ` ¡EXCELENTE! Obtuviste ${puntuacionTotal}/${puntuacionMaxima} puntos (${porcentajeFinal}%)`;
+            } else if (porcentajeFinal >= 80) {
+                mensajeFinal = ` ¡MUY BIEN! Obtuviste ${puntuacionTotal}/${puntuacionMaxima} puntos (${porcentajeFinal}%)`;
+            } else if (porcentajeFinal >= 70) {
+                mensajeFinal = ` BIEN. Obtuviste ${puntuacionTotal}/${puntuacionMaxima} puntos (${porcentajeFinal}%)`;
+            } else if (porcentajeFinal >= 60) {
+                mensajeFinal = ` Sigue practicando. Obtuviste ${puntuacionTotal}/${puntuacionMaxima} puntos (${porcentajeFinal}%)`;
+            } else {
+                mensajeFinal = ` Necesitas estudiar más. Obtuviste ${puntuacionTotal}/${puntuacionMaxima} puntos (${porcentajeFinal}%)`;
+            }
+
+            puntuacionElement.textContent = mensajeFinal;
+            reiniciarBtn.style.display = 'inline-block';
+            reiniciarBtn.onclick = function() {
+                location.reload();
+            };
+        }
+
+        // Cargar la primera ronda al iniciar
+        cargarRonda(1);
+    </script>
+
+
+
+<!--ESTE ES EL PIE DE PAGINA-->  
+<footer class="footer"> 
+  <div class="footer-contenido">
+
+    <div class="footer-info">
+      <h1>MathDiscretas EPN</h1>
+      <p>Solventamos cualquier duda que surja durante tu aprendizaje.</p>
     </div>
 
-</div>
+    <div class="footer-ayuda">
+      <a class="icono-ayuda" id="botnoAyuda" title="Tengo una pregunta">
+        <i class='bx bx-help-circle'></i>
+      </a>
+    </div>
+  </div>
+   
 
-<script>
-function animarBoton(elemento) {
-    elemento.style.transform = "scale(1.5)";
-    
-    setTimeout(() => {
-        elemento.style.transform = "scale(1)";
-    }, 200);
-}
-</script>
+  <!--SECCION DE LOS COMENTARIOS-->  
+  <div class="footer-comentarios" id="comentarios">
+  <h3>Déjanos tu pregunta</h3>
 
-</body>
+  <form class="ventana-comentarios">
+    <input type="text" placeholder="Tu nombre" required>
+    <input type="email" placeholder="Tu correo" required>
+    <textarea placeholder="Escribe tu comentario..." required></textarea>
+    <button type="submit">Enviar</button>    
+  </form>
+  </div>
+  <a href="#comentarios" class="icono-ayuda" id="botonAyuda">
+    <i class='bx bx-help-circle'></i>
+  </a>
+
+  </footer>
+
+ </body>
 </html>
